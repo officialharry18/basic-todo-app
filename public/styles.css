@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 1rem;
+}
+
+header, footer {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.todo-form input, select {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.todo-form button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.todo-list li {
+  background: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.edit-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.filter a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.filter a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .edit-form input, .edit-form select {
+    width: 100%;
+  }
+}
